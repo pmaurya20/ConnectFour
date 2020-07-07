@@ -1,0 +1,139 @@
+/* Connect 4 Game Board Stylingk */
+.Game {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Board {
+  padding: 0;
+  border-radius: 30px;   
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background:var(--gameBgColor);
+}
+
+.Hole {
+  margin: 8px;
+  min-width: 42px;
+  min-height: 42px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
+
+.Hole div {
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s;
+  background-size: contain;
+  background-color: var(--white);
+}
+
+.Player1 {
+  border: 5px solid var(--green);
+  box-shadow: 0 0 5px 1px var(--darkGrey) inset;
+  background: url('../../assets/images/avatar01.png') no-repeat center center;
+}
+
+.Player2 {
+  border: 5px solid var(--yellow);
+  box-shadow: 0 0 5px 1px var(--darkGrey) inset;
+  background: url('../../assets/images/avatar02.png') no-repeat center center;
+}
+
+.gameBoard ul { margin-top: 15px; }
+
+.winnerMessage {
+  margin: 20px;
+  display: none;
+  font-size: 0pt;
+  font: 12pt;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.18, 0.99, 0.8, 1.17);
+}
+
+.winnerMessage.appear {
+  margin: 0;
+  display: block;
+  font-size: 20pt;
+  opacity: 1;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.gameBoard h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.winnerMessage h4 {
+  margin-bottom: 5px;
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.winnerMessage p { font-size: 14px; }
+.gameContainer.container .PlayerDetails input { border-bottom: 0; }
+.fullModal .gameContainer.container li { pointer-events: none; }
+.gameBoard .board-actions button { margin-top: 15px; }
+
+.gameBoard .board-actions {
+  border-top: 1px solid var(--borderColor);
+  margin-top: 20px;
+}
+
+body .gameContainer.container {
+    padding: 0;
+    border-radius: 30px;
+    background: var(--lighterGrey);
+}
+
+.gameContainer.container .row { margin: 0; }
+.gameContainer.container .boardCol { padding: 15px; }
+
+.gameContainer.container .boardCol:first-of-type {
+  border-radius: 30px;
+  box-shadow: 0 0 9px 0px var(--boxShadowGrey);
+  background: var(--white);
+}
+
+  .gameContainer.container .avatarImage { width: 80px; }
+
+  /* Ipad potrait and mobile devices */
+  @media screen and (max-width: 768px) {
+    .container .Hole {
+        min-width: 30px;
+        min-height: 30px;
+      }
+
+    .container .Hole div {
+        min-width: 30px;
+        min-height: 30px;
+        border-width: 3px;
+  }
+
+  .gameContainer.container .boardCol { padding: 10px; }
+}
+
+/* Mobile Potrait devices */
+@media screen and (max-width: 480px) {
+    .gameContainer.container .Hole {
+      min-width: 20px;
+      min-height: 20px;
+      margin: 5px;
+    }
+
+ .gameContainer.container .Hole div {
+      min-width: 20px;
+      min-height: 20px;
+  }
+}
+  

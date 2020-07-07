@@ -1,0 +1,48 @@
+/* Button Styling */
+button.btn {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 15px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: left;
+    box-shadow: 0 3px 9px 0px var(--boxShadowGrey);
+}
+
+button.btn:focus { box-shadow: 0 3px 9px 0px var(--boxShadowGrey); }
+
+button.btn:hover {
+    color: var(--white);
+    opacity: .7;
+}
+
+button.btn img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Button Color */
+button.btn-primaryBlue { background-color: var(--lightBlue); }
+button.btn-primaryDarkBlue { background-color: var(--darkBlue); }
+button.btn-primaryLightPurple { background-color: var(--lightPurple); }
+button.btn-primaryPurple { background-color: var(--purple); }
+
+button.btn-whiteBlue,
+button.btn.btn-whiteBlue:hover {
+    background-color: var(--white);
+    color: var(--darkBlue);
+}
+
+button.btn-whiteRed,
+button.btn.btn-whiteRed:hover {
+    background-color: var(--white);
+    color: var(--red);
+}
+
+/* Button Alignment */
+button.center { text-align: center; }
+button.left { text-align: left; }

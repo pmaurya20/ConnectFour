@@ -1,0 +1,132 @@
+/* Main Page Styling */
+.fullModal .avatarImage {
+    width: 70px;
+    height: 60px;
+    border: 8px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 5px 1px var(--darkGrey) inset;
+}
+
+.fullModal .avatarImage img {
+    width: calc(100% - 10px);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fullModal .PlayerDetails input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--borderColor);
+    background: transparent;
+    color: var(--black);
+}
+
+.fullModal .twoPlayers .PlayerDetails input { padding-left: 30px; }
+.fullModal .twoPlayers form { margin-left: -31px; }
+
+.fullModal .PlayerDetails input:focus { outline: none; }
+
+.fullModal .PlayerDetails {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.fullModal .PlayerDetails p {
+    margin-bottom: 3px;
+    color: var(--darkGrey);
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.fullModal li.green-list .avatarImage { border-color: var(--green); }
+.fullModal li.orange-list .avatarImage { border-color: var(--yellow); }
+.fullModal li.grey-list .avatarImage { border-color: var(--subtleBlue); }
+.fullModal li.green-list { background-color: var(--lightGreenBg); }
+.fullModal li.orange-list { background-color: var(--lightOrangeBg); }
+.fullModal li.grey-list,
+.grey-list { background-color: var(--lightBlueBg); }
+
+.fullModal .grey-list .avatarImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullModal .grey-list .avatarImage img {
+    width: 20px;
+    height: 20px;
+}
+
+.fullModal ul {
+    padding: 0;
+    margin: 0;
+}
+
+.fullModal li,
+.grey-list {
+    background: var(--lightGreenBg);
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #70707026;
+}
+
+.input[type="file"] { display: none}
+.gameModal.modal { z-index: 1052; }
+body .gameContainer.container { max-width: 800px; }
+
+.circles {
+    margin: -40px 0 25px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .red-sm { background-color: var(--red); }
+  .yellow-sm { background-color: var(--yello); }
+  
+  .message {
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .white {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: var(--white);
+  }
+  
+  .red {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: var(--red);
+    transition: background-color 0.5s;
+  }
+  
+  .yellow {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: var(--yellow);
+    transition: background-color 0.5s;
+  }
+
+  .actionWrap {
+      padding-top: 20px;
+      border-top: 1px solid var(--borderColor);
+      margin-top: 20px;
+  }
+
+  input[type="file"] {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+  }

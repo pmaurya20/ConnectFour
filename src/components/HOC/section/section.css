@@ -1,0 +1,12 @@
+
+/* Section Styling */
+.App section {
+    padding: 40px 0;
+}
+
+.App section:last-of-type {
+    border-top: 1px solid var(--borderColor);
+    padding: 60px 0 0;
+}
+
+section button.btn { font-weight: 500; }
