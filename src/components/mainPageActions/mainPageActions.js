@@ -11,8 +11,8 @@ import Container from 'react-bootstrap/Container';
 import List from '../list/list';
 import Icon1 from '../../assets/images/avatar01.png';
 import Icon2 from '../../assets/images/avatar02.png';
-import Icon3 from '../../assets/images/winner.png';
-import Icon4 from '../../assets/images/run.png';
+// import Icon3 from '../../assets/images/winner.png';
+// import Icon4 from '../../assets/images/run.png';
 import './mainPageActions.css';
 import SubList from '../list/subList/subList';
 import Board from '../board/board';
@@ -196,7 +196,7 @@ class PageActions extends Component {
                     imageChange={this.photoUpload1}
                     imagePreview={this.state.imagePreviewUrl1}>
                   </List>
-                  <List
+                  {/* <List
                     status="grey-list"
                     subText="Number of game"
                     inputName="Number of game"
@@ -211,7 +211,7 @@ class PageActions extends Component {
                     inputValue={this.state.radioCheckedLabelTurn}
                     click={() => this.setState({ trainingSubModal: true })}
                     imagePreview={Icon4} fileHidden>
-                  </List>
+                  </List> */}
                 </ul>
                 <div className="actionWrap">
                   <Button variant="btn-primaryDarkBlue" align="center" click={this.SubmitForm}>Start Game</Button>

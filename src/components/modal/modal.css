@@ -33,8 +33,11 @@
 }
 
 .fullModal .modal-body {
-    padding: 30px;
     background-color: var(--bgColor);
+    height: calc(100vh - 57px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body .fullModal .container {
